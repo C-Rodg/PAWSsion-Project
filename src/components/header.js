@@ -1,42 +1,75 @@
+// Libraries
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import React from 'react'
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+// Components
+import Facebook from './icons/facebook'
+import Twitter from './icons/twitter'
+import Instagram from './icons/instagram';
+import Mail from './icons/mail';
+
+const Header = ({ headerOpen }) => {
+  return (
+    <nav>
+      <div className="nav-left">
+        <li role="menuitem">
+          <Link to="/">Home</Link>
+        </li>
+        <li role="menuitem">
+          <Link to="/about">About</Link>
+        </li>
+        <li role="menuitem">
+          <Link to="/gallery">Gallery</Link>
+        </li>
+        <li role="menuitem">
+          <Link to="/contact">Contact</Link>
+        </li>
+      </div>
+      <div className="nav-right social-links">
+        <a
+          className="social-link"
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+          <Facebook />
+        </a>
+        <a
+          className="social-link"
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Twitter />
+        </a>
+        <a
+          className="social-link"
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Instagram />
+        </a>
+        <a
+          className="social-link"
+          href="https://gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Mail />
+        </a>
+      </div>
+    </nav>
+  )
+}
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
+  siteTitle: PropTypes.bool,
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  headerOpen: false,
 }
 
 export default Header

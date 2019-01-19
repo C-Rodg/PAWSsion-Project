@@ -1,16 +1,16 @@
 import React from 'react'
 
-// Components
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Wrapper from '../components/wrapper'
 
-const IndexPage = () => (
+const Gallery = () => (
   <Wrapper>
-    <Layout headerOpen={true}>
-      <SEO title="Home" keywords={[`non-profit`, `dogs`, `shelter`]} />
+    <Layout headerOpen={false}>
+      <SEO title="Gallery" />
+      <h1>Image Gallery slideshow</h1>
     </Layout>
   </Wrapper>
 )
 
-export default IndexPage
+export default Gallery

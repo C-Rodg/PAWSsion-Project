@@ -1,16 +1,16 @@
 import React from 'react'
 
-// Components
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Wrapper from '../components/wrapper'
 
-const IndexPage = () => (
+const Contact = () => (
   <Wrapper>
-    <Layout headerOpen={true}>
-      <SEO title="Home" keywords={[`non-profit`, `dogs`, `shelter`]} />
+    <Layout headerOpen={false}>
+      <SEO title="Contact Us" />
+      <h1>Contact us content</h1>
     </Layout>
   </Wrapper>
 )
 
-export default IndexPage
+export default Contact
