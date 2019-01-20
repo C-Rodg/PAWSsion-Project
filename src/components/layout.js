@@ -6,10 +6,9 @@ import PropTypes from 'prop-types'
 import Header from './header'
 import Footer from './footer'
 
-const Layout = ({ children, headerOpen }) => {
+const Layout = ({ children }) => {
   return (
     <>
-      <Header headerOpen={headerOpen} />
       {children}
       <Footer />
     </>

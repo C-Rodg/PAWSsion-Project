@@ -9,7 +9,7 @@ import Twitter from './icons/twitter'
 import Instagram from './icons/instagram';
 import Mail from './icons/mail';
 
-const Header = ({ headerOpen }) => {
+const SiteNav = ({ navOpen }) => {
   return (
     <nav>
       <div className="nav-left">
@@ -64,12 +64,12 @@ const Header = ({ headerOpen }) => {
   )
 }
 
-Header.propTypes = {
-  siteTitle: PropTypes.bool,
+SiteNav.propTypes = {
+  navOpen: PropTypes.bool,
 }
 
-Header.defaultProps = {
-  headerOpen: false,
+SiteNav.defaultProps = {
+  navOpen: false,
 }
 
-export default Header
+export default SiteNav
