@@ -3,8 +3,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import Header from './header'
 import Footer from './footer'
+
+// Styles
+import '../styles/layout.css'
 
 const Layout = ({ children }) => {
   return (

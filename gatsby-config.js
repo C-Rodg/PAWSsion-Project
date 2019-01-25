@@ -3,6 +3,7 @@ module.exports = {
     title: `PAWSsion Project`,
     description: `PAWSsion Project - Bacolod-based non-profit group rescuing dogs from the pound and supporting stray and maltreated dogs.`,
     author: `@C-Rodg`,
+    keywords: [`non-profit`, `dogs`, `shelter`],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

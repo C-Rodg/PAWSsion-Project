@@ -1,3 +1,4 @@
+// Libraries
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
@@ -10,6 +11,7 @@ function SEO({ description, lang, meta, keywords, title }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const htmlKeywords = keywords || data.site.siteMetadata.keywords
         return (
           <Helmet
             htmlAttributes={{
@@ -52,10 +54,10 @@ function SEO({ description, lang, meta, keywords, title }) {
               },
             ]
               .concat(
-                keywords.length > 0
+                htmlKeywords.length > 0
                   ? {
                       name: `keywords`,
-                      content: keywords.join(`, `),
+                      content: htmlKeywords.join(`, `),
                     }
                   : []
               )

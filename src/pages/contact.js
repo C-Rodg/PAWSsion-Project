@@ -1,12 +1,16 @@
+// Libraries
 import React from 'react'
 
+// Components
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Wrapper from '../components/wrapper'
+
+// Styles
+import Wrapper from '../styles/wrapper'
 
 const Contact = () => (
   <Wrapper>
-    <Layout headerOpen={false}>
+    <Layout>
       <SEO title="Contact Us" />
       <h1>Contact us content</h1>
     </Layout>
