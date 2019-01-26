@@ -55,32 +55,32 @@ const Footer = () => {
           </div>
           <StyledNavLinks>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/PAWSsionProject/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Facebook
             </a>
             <a
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Twitter
-            </a>
-            <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/pawssionproject/"
               target="_blank"
               rel="noopener noreferrer"
             >
               Instagram
             </a>
             <a
-              href="https://google.com"
+              href="mailto:pawssionproject@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
               Mail
+            </a>
+            <a
+              href="tel:+639778210271"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Call
             </a>
           </StyledNavLinks>
         </FlexWrapper>

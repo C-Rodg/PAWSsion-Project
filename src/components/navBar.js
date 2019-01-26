@@ -5,9 +5,9 @@ import { Link } from 'gatsby'
 
 // Icons
 import Facebook from './icons/facebook'
-import Twitter from './icons/twitter'
 import Instagram from './icons/instagram'
 import Mail from './icons/mail'
+import Phone from './icons/phone'
 
 // Logo
 import PawsLogo from '../images/logo-horizontal.png'
@@ -102,7 +102,7 @@ const NavBar = ({ isHero }) => {
           <SocialLinkWrapper>
             <SocialLink
               className="social-link"
-              href="https://facebook.com"
+              href="https://www.facebook.com/PAWSsionProject/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -110,20 +110,13 @@ const NavBar = ({ isHero }) => {
             </SocialLink>
             <SocialLink
               className="social-link"
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Twitter />
-            </SocialLink>
-            <SocialLink
-              className="social-link"
-              href="https://instagram.com"
+              href="https://www.instagram.com/pawssionproject/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Instagram />
             </SocialLink>
+
             <SocialLink
               className="social-link"
               href="https://gmail.com"
@@ -131,6 +124,14 @@ const NavBar = ({ isHero }) => {
               rel="noopener noreferrer"
             >
               <Mail />
+            </SocialLink>
+            <SocialLink
+              className="social-link"
+              href="tel:+639778210271"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Phone />
             </SocialLink>
           </SocialLinkWrapper>
         </FlexWrapper>
