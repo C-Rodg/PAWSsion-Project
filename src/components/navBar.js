@@ -17,11 +17,14 @@ import GridWrap from '../styles/gridWrap'
 import FlexWrapper from '../styles/flexWrapper'
 
 const StyledHeaderWrapper = styled.header`
-  background: #000;
-  padding: 12px 4vw 12px 4vw;
+  position: relative;
+  background: ${props => props.isHero ? 'transparent' : '#000'};
+  padding: ${props => {
+    return props.isHero ? '12px 0' : '12px 4vw 12px 4vw';
+  }};
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.7);
-
+  top: ${props => props.isHero ? '-70px' : '0px'};
   a:hover {
     color: rgba(255, 255, 255, 1);
   }
@@ -70,13 +73,16 @@ const SocialLink = styled.a`
 
 
 
-const NavBar = () => {
+const NavBar = ({isHero}) => {
   return (
-    <StyledHeaderWrapper>
+    <StyledHeaderWrapper isHero={isHero}>
       <GridWrap>
         <FlexWrapper as="nav">
           <NavLinksWrapper>
-            <LogoImage src={PawsLogo} alt="Pawssion Project" />
+            { !isHero && (
+              <LogoImage src={PawsLogo} alt="Pawssion Project" />
+            )}
+            
             <NavLinks to="/">Home</NavLinks>
             <NavLinks to="/about">About</NavLinks>
             <NavLinks to="/gallery">Gallery</NavLinks>
