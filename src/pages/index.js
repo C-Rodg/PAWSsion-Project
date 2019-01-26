@@ -44,6 +44,16 @@ const Card = styled.article`
     transform: translate3d(0px, -1px, 0px) scale(1.02);
     transition: all 0.4s ease 0s;
   }
+
+  a {
+    display: inline-block;
+  }
+
+  p {
+    line-height: 180%;
+    color: rgb(21, 23, 26);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
 `
 
 const SubText = styled.div`
@@ -94,7 +104,7 @@ const DogImage = styled.img`
 `
 
 const DogContentWrapper = styled.div`
-  padding: 0 30px 30px 30px;
+  padding: 30px;
 `
 
 const IndexPage = () => (
@@ -113,13 +123,13 @@ const IndexPage = () => (
                 <SubText>About Us</SubText>
                 <TitleText>Come Learn About Our Story</TitleText>
 
-                <div>
+                <p>
                   **TODO** Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s, when an unknown
                   printer took a galley of type and scrambled it to make a type
                   specimen book. It has survived not only five centuries.
-                </div>
+                </p>
               </Link>
             </div>
           </LeadCard>
@@ -131,11 +141,11 @@ const IndexPage = () => (
               <Link to="/gallery">
                 <SubText>Gallery</SubText>
                 <TitleText>See Some of Our Rescues</TitleText>
-                <div>
+                <p>
                   **TODO** Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
-                </div>
+                </p>
               </Link>
             </DogContentWrapper>
           </Card>
@@ -147,11 +157,11 @@ const IndexPage = () => (
               <Link to="/contact">
                 <SubText>Contact</SubText>
                 <TitleText>Get in Touch With Us</TitleText>
-                <div>
+                <p>
                   **TODO** Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
                   standard dummy text ever since the 1500s.
-                </div>
+                </p>
               </Link>
             </DogContentWrapper>
           </Card>
