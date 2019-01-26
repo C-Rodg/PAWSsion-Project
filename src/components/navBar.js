@@ -10,7 +10,7 @@ import Instagram from './icons/instagram'
 import Mail from './icons/mail'
 
 // Logo
-import PawsLogo from '../images/logo-horizontal.png';
+import PawsLogo from '../images/logo-horizontal.png'
 
 // Styles
 import GridWrap from '../styles/gridWrap'
@@ -18,32 +18,41 @@ import FlexWrapper from '../styles/flexWrapper'
 
 const StyledHeaderWrapper = styled.header`
   position: relative;
-  background: ${props => props.isHero ? 'transparent' : '#000'};
+  background: ${props => (props.isHero ? 'transparent' : '#000')};
   padding: ${props => {
-    return props.isHero ? '12px 0' : '12px 4vw 12px 4vw';
+    return props.isHero ? '12px 0' : '12px 4vw 12px 4vw'
   }};
   font-size: 0.75rem;
   color: rgba(255, 255, 255, 0.7);
-  top: ${props => props.isHero ? '-70px' : '0px'};
+  top: ${props => (props.isHero ? '-70px' : '0px')};
   a:hover {
     color: rgba(255, 255, 255, 1);
   }
 `
 
 const NavLinksWrapper = styled.div`
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media (max-width: 770px) {
+    margin: 0 auto;
+  }
 `
 
 const LogoImage = styled.img`
-    max-height: 48px;
-    margin-top: 5px;
-    margin-right: 10px;
-`;
+  max-height: 48px;
+  margin-top: 5px;
+  margin-right: 10px;
+
+  @media (max-width: 770px) {
+    margin: 5px auto;
+  }
+`
 
 const NavLinks = styled(Link)`
-    text-transform: uppercase;
-    padding: 10px 12px;
+  text-transform: uppercase;
+  padding: 10px 12px;
 `
 
 const SocialLinkWrapper = styled.div`
@@ -51,6 +60,11 @@ const SocialLinkWrapper = styled.div`
   flex-shrink: 0;
   align-items: center;
   height: 40px;
+  justify-content: center;
+
+  @media (max-width: 770px) {
+    margin: 0 auto;
+  }
 `
 
 const SocialLink = styled.a`
@@ -71,22 +85,19 @@ const SocialLink = styled.a`
   }
 `
 
-
-
-const NavBar = ({isHero}) => {
+const NavBar = ({ isHero }) => {
   return (
     <StyledHeaderWrapper isHero={isHero}>
       <GridWrap>
         <FlexWrapper as="nav">
           <NavLinksWrapper>
-            { !isHero && (
-              <LogoImage src={PawsLogo} alt="Pawssion Project" />
-            )}
-            
-            <NavLinks to="/">Home</NavLinks>
-            <NavLinks to="/about">About</NavLinks>
-            <NavLinks to="/gallery">Gallery</NavLinks>
-            <NavLinks to="/contact">Contact</NavLinks>
+            {!isHero && <LogoImage src={PawsLogo} alt="Pawssion Project" />}
+            <div>
+              <NavLinks to="/">Home</NavLinks>
+              <NavLinks to="/about">About</NavLinks>
+              <NavLinks to="/gallery">Gallery</NavLinks>
+              <NavLinks to="/contact">Contact</NavLinks>
+            </div>
           </NavLinksWrapper>
           <SocialLinkWrapper>
             <SocialLink

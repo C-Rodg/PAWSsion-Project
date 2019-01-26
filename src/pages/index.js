@@ -65,13 +65,23 @@ const LeadCard = styled(Card)`
   flex-direction: row;
   flex: 1 1 100%;
 
+  @media (max-width: 720px) {
+    flex-direction: column;
+
+    .content.side-image {
+      padding-right: 0;
+    }
+  }
+
+  .content {
+    flex-basis: 50%;
+  }
+
   .side-image {
-    width: 50%;
     padding-right: 20px;
   }
 
   .side-right {
-    width: 50%;
     padding: 30px 40px 30px 20px;
   }
 `
@@ -95,10 +105,10 @@ const IndexPage = () => (
       <GridWrap>
         <StyledMainWrapper>
           <LeadCard>
-            <Link to="/about" className="side-image">
+            <Link to="/about" className="content side-image">
               <DogImage src={PicDogTrio} alt="trio of rescue dogs" />
             </Link>
-            <div className="side-right">
+            <div className="content side-right">
               <Link to="/about">
                 <SubText>About Us</SubText>
                 <TitleText>Come Learn About Our Story</TitleText>
