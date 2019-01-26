@@ -2,19 +2,16 @@
 import React from 'react'
 
 // Components
-import Layout from '../components/layout'
+import PageLayout from '../components/pageLayout'
 import SEO from '../components/seo'
-
-// Styles
-import Wrapper from '../styles/wrapper'
+import NavBar from '../components/navBar'
 
 const About = () => (
-  <Wrapper>
-    <Layout>
-      <SEO title="About Us" />
-      <h1>About Us content</h1>
-    </Layout>
-  </Wrapper>
+  <PageLayout>
+    <SEO title="About Us" />
+    <NavBar />
+    <h1>About Us content</h1>
+  </PageLayout>
 )
 
 export default About
