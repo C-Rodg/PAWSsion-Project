@@ -10,6 +10,7 @@ import NavBar from '../components/navBar'
 import PageTitle from '../styles/pageTitle'
 import PaddingWrapper from '../styles/paddingWrapper'
 import GridWrap from '../styles/gridWrap'
+import PageParagraph from '../styles/pageParagraph'
 
 const About = () => (
   <PageLayout>
@@ -19,7 +20,9 @@ const About = () => (
       <h1>About Us</h1>
     </PageTitle>
     <PaddingWrapper>
-      <GridWrap>lksjdlfjl lksjdflkj skljdfkl</GridWrap>
+      <GridWrap>
+        <PageParagraph>*TODO**...about stuff</PageParagraph>
+      </GridWrap>
     </PaddingWrapper>
   </PageLayout>
 )
