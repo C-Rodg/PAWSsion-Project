@@ -22,6 +22,10 @@ const About = () => (
     <PaddingWrapper>
       <GridWrap>
         <PageParagraph>*TODO**...about stuff</PageParagraph>
+        <PageParagraph>*TODO**...about stuff</PageParagraph>
+        <PageParagraph>*TODO**...image?</PageParagraph>
+        <PageParagraph>*TODO**...about stuff</PageParagraph>
+        <PageParagraph>*TODO**...about stuff</PageParagraph>
       </GridWrap>
     </PaddingWrapper>
   </PageLayout>
