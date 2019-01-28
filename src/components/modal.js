@@ -1,5 +1,5 @@
 // Libraries
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { createPortal } from 'react-dom'
 
 const modalRoot = document.body

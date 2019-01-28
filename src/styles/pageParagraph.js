@@ -9,6 +9,13 @@ const PageParagraph = styled.p`
   line-height: 170%;
   text-rendering: optimizeLegibility;
 
+  blockquote {
+    margin: 0 0 1.5em;
+    padding: 0 1.5em;
+    border-left: #3eb0ef 3px solid;
+    font-style: italic;
+  }
+
   a {
     color: #000;
     word-break: break-word;

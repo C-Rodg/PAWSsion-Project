@@ -124,11 +124,10 @@ const IndexPage = () => (
                 <TitleText>Come Learn About Our Story</TitleText>
 
                 <p>
-                  **TODO** Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make a type
-                  specimen book. It has survived not only five centuries.
+                  We are a Bacolod-based non-profit group resucing dogs from the
+                  pound and supporting stray and maltreated dogs. Come learn why
+                  we are so passionate about our furry friends and why we
+                  believe our rescues are deserving of a loving home today!
                 </p>
               </Link>
             </div>
@@ -142,9 +141,9 @@ const IndexPage = () => (
                 <SubText>Gallery</SubText>
                 <TitleText>See Some of Our Rescues</TitleText>
                 <p>
-                  **TODO** Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Interested in seeing some of our work? Or thinking about
+                  getting involved by volunteering or adopting one of our
+                  rescues? Come meet our team here.
                 </p>
               </Link>
             </DogContentWrapper>
@@ -158,9 +157,10 @@ const IndexPage = () => (
                 <SubText>Contact</SubText>
                 <TitleText>Get in Touch With Us</TitleText>
                 <p>
-                  **TODO** Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s.
+                  Want to make a donation? Or just want to get in touch? We have
+                  many ways of contacting us - all of which can be found here.
+                  We will happily answer any questions you may have about our
+                  pups or organization.
                 </p>
               </Link>
             </DogContentWrapper>
