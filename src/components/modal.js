@@ -2,7 +2,10 @@
 import { Component } from 'react'
 import { createPortal } from 'react-dom'
 
-const modalRoot = document.body
+let modalRoot = null
+if (typeof document !== 'undefined') {
+  modalRoot = document.body
+}
 
 class Modal extends Component {
   constructor(props) {
