@@ -54,6 +54,7 @@ const Footer = () => {
             </a>
           </div>
           <StyledNavLinks>
+            <a href="/contact">Donate</a>
             <a
               href="https://www.facebook.com/PAWSsionProject/"
               target="_blank"

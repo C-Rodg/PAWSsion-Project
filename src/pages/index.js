@@ -143,7 +143,7 @@ const IndexPage = () => (
                 <p>
                   Interested in seeing some of our work? Or thinking about
                   getting involved by volunteering or adopting one of our
-                  rescues? Come meet our team here.
+                  rescues? Come meet our team and past rescues here.
                 </p>
               </Link>
             </DogContentWrapper>

@@ -42,16 +42,13 @@ const Contact = () => (
     <PaddingWrapper>
       <GridWrap>
         <PageParagraph>
-          Want to reach out to us? Please choose one of the contact methods or
-          complete the contact form below and we will be in touch! If you are
-          interested in helping our cause, then donations can be sent to the
-          Paypal account below.
+          Want to reach out to us? Please choose one of the contact methods
+          below and we will be in touch! If you are interested in helping our
+          cause, then donations can be sent to the Paypal, BPI Savings, or GCash
+          accounts listed below.
         </PageParagraph>
         <PageParagraph>
           <ContactList>
-            <li>
-              <em>Phone:</em> <a href="tel:+639778210271">+63 977 821 0271</a>
-            </li>
             <li>
               <em>Paypal Donation Account:</em>{' '}
               <a
@@ -62,6 +59,26 @@ const Contact = () => (
                 pawssionproject@gmail.com
               </a>
             </li>
+            <li>
+              <em>BPI Savings:</em> <span>3349032421</span>
+            </li>
+            <li>
+              <em>GCash:</em> <span>09778210271</span>
+            </li>
+            <li>
+              <em>Go Fund Me:</em>{' '}
+              <a
+                href="https://www.gofundme.com/pawssion-project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pawssion Project
+              </a>
+            </li>
+            <li>
+              <em>Phone:</em> <a href="tel:+639778210271">+63 977 821 0271</a>
+            </li>
+
             <li>
               <em>Contact Email:</em>{' '}
               <a href="mailto:pawssionproject@gmail.com">

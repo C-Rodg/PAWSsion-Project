@@ -43,15 +43,15 @@ const About = () => (
         </PageParagraph>
         <PageParagraph>
           Interested in adopting? While we didn't have adoption fees before,
-          please be advised that Pawssion Project now asks for PHP1000 donation
-          in cash for every dog adopted from the shelter. This is to sustain the
-          needs of the other dogs left at the shelter and other expenses. Only
-          spayed/neutered dogs may be adopted, but you may adopt an unsterilized
-          dog so long as you sign an agreement that you will have the dog
-          undergo spay/neuter operation, as part of our responsible pet
-          ownership campaign. All adopters must agree to update vaccinations and
-          must agree to provide the dog with a quality life - including bringing
-          the dog to the vet when sick.
+          please be advised that Pawssion Project now asks for PHP1000{' '}
+          <a href="/contact">donation</a> in cash for every dog adopted from the
+          shelter. This is to sustain the needs of the other dogs left at the
+          shelter and other expenses. Only spayed/neutered dogs may be adopted,
+          but you may adopt an unsterilized dog so long as you sign an agreement
+          that you will have the dog undergo spay/neuter operation, as part of
+          our responsible pet ownership campaign. All adopters must agree to
+          update vaccinations and must agree to provide the dog with a quality
+          life - including bringing the dog to the vet when sick.
         </PageParagraph>
         <PageParagraph>
           Thank you and may our rescues find their forever homes in you...
