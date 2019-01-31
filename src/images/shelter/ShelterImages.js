@@ -22,10 +22,17 @@ import Image21 from './shelter_21.jpg'
 import Image22 from './shelter_22.jpg'
 import Image23 from './shelter_23.jpg'
 import Image24 from './shelter_24.jpg'
+import Image25 from './shelter_25.jpg'
+import Image26 from './shelter_26.jpg'
+import Image27 from './shelter_27.jpg'
 
 const ShelterImages = [
-  { src: Image01, style: '', text: 'Dogs enjoying shelter' },
-  { src: Image02, style: '', text: 'A new rescue dog' },
+  { src: Image01, style: '', text: 'Look at that love' },
+  { src: Image02, style: '', text: 'Puppy eyes' },
+  { src: Image21, style: '', text: 'Dog smiling' },
+  { src: Image25, style: '', text: 'Playing with the dogs at the shelter' },
+  { src: Image26, style: '', text: 'Look at that smile!' },
+  { src: Image27, style: '', text: 'Puppies playing together' },
   { src: Image03, style: '', text: 'Rescue puppies in basket' },
   { src: Image04, style: '', text: 'A cute puppy' },
   { src: Image05, style: '', text: 'A volunteer hanging out with a rescue' },
@@ -44,7 +51,6 @@ const ShelterImages = [
   { src: Image18, style: '', text: 'Dog exploring the outdoors' },
   { src: Image19, style: '', text: 'What a cute face!' },
   { src: Image20, style: '', text: 'Petting a new rescue' },
-  { src: Image21, style: '', text: 'Dog smiling' },
   { src: Image22, style: '', text: 'Before and after resuce' },
   { src: Image23, style: '', text: 'What a cute puppy' },
   { src: Image24, style: '', text: 'Malou showing dogs love' },
