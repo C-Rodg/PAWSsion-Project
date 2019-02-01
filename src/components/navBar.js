@@ -119,7 +119,7 @@ const NavBar = ({ isHero }) => {
 
             <SocialLink
               className="social-link"
-              href="https://gmail.com"
+              href="mailto:pawssionproject@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
