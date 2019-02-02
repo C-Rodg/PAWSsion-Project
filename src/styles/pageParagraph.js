@@ -14,6 +14,10 @@ const PageParagraph = styled.p`
     padding: 0 1.5em;
     border-left: #3eb0ef 3px solid;
     font-style: italic;
+
+    .author {
+      text-align: right;
+    }
   }
 
   a {
